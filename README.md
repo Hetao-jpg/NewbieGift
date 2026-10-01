@@ -5,6 +5,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
+## 📥 下载 / Download
+
+**最新版本 v1.7.0**：[点击下载 NewbieGift.dll](https://github.com/Hetao-jpg/NewbieGift/releases/latest)
+---
 
 ## 中文说明
 
