@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<AssemblyName>NewbieGift</AssemblyName>
+		<GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>NewbieGift</RootNamespace>
+		<LangVersion>12.0</LangVersion>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+		<Platforms>x64</Platforms>
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<GamePath>D:\SteamLibrary\steamapps\common\Probably Stolen Demo</GamePath>
+		<MLNet>$(GamePath)\MelonLoader\net6</MLNet>
+		<MLIl2Cpp>$(GamePath)\MelonLoader\Il2CppAssemblies</MLIl2Cpp>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Resources.newbie_gift.png" />
+		<EmbeddedResource Include="Resources.newbie_gift.png" LogicalName="Resources.newbie_gift.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="MelonLoader">
+			<HintPath>$(MLNet)\MelonLoader.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="0Harmony">
+			<HintPath>$(MLNet)\0Harmony.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Il2CppInterop.Runtime">
+			<HintPath>$(MLNet)\Il2CppInterop.Runtime.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Il2CppInterop.HarmonySupport">
+			<HintPath>$(MLNet)\Il2CppInterop.HarmonySupport.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(MLIl2Cpp)\Assembly-CSharp.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Il2Cppmscorlib">
+			<HintPath>$(MLIl2Cpp)\Il2Cppmscorlib.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(MLIl2Cpp)\UnityEngine.CoreModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>$(MLIl2Cpp)\UnityEngine.UI.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>$(MLIl2Cpp)\UnityEngine.UIModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+			<HintPath>$(MLIl2Cpp)\UnityEngine.ImageConversionModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.InputLegacyModule">
+			<HintPath>$(MLIl2Cpp)\UnityEngine.InputLegacyModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
+
+</Project>
