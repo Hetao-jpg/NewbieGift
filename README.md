@@ -119,8 +119,8 @@ All items added by other mods are automatically included in the merchant's buyin
 ## 反馈 / Feedback
 
 - QQ 群：@夏月的核桃
-- Nexus Mods: [link to your mod page]
-- Discord: @你的 Discord 用户名
+- Nexus Mods: [[link to your mod page]](https://www.nexusmods.com/probablystolen/mods/368)
+- Discord: @hetaoxd
 
 ---
 
